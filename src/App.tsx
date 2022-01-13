@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
 import DropMenu from './components/DropMenu'
+import Dinopedia from './components/dinosaur/Dinopedia';
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 				<DropMenu />
 			</header>
 			<Calculator />
+			<Dinopedia />
 		</div>
 	);
 }
