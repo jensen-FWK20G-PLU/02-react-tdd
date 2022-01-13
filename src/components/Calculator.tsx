@@ -8,9 +8,9 @@ const Calculator = () => {
 				<h1> Calculator </h1>
 			</header>
 			<main>
-				<button> Clear </button>
+				<button onClick={() => setValue(0)}> Clear </button>
 				<button onClick={() => setValue(value + 1)} data-testid="button-increase"> +1 </button>
-				<button> -1 </button>
+				<button onClick={() => setValue(value - 1)}> -1 </button>
 				<p className="result">
 					<code> Value: {value} </code>
 				</p>
