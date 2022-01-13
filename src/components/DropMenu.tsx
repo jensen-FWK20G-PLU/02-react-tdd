@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 const DropMenu = () => {
-	const [menuIsVisible/*, setMenuIsVisible*/] = useState(false)
+	const [menuIsVisible, setMenuIsVisible] = useState(false)
 
 	return (
 		<nav>
-			<button> Menu </button>
+			<button onClick={() => setMenuIsVisible(!menuIsVisible)}> Menu </button>
 			{ menuIsVisible ? (
 				<ul>
 					<li> Item 1 </li>
